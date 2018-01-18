@@ -1,0 +1,66 @@
+[
+    {"key": "questions",
+     "value":
+     {
+         "inadequate":98.2,
+         "insufficient":146.0,
+         "adequate": 77.1
+     }
+    },
+    {"key": "wrongAnswers",
+     "value":{
+        "inadequate":73.5,
+        "insufficient":76.3,
+        "adequate": 25.4
+     }
+    },
+    {"key": "correctAnswers",
+     "value":
+     {
+        "inadequate":24.7,
+        "insufficient":69.7,
+        "adequate": 51.7
+     }
+    },
+    {"key": "points",
+     "value":
+     {
+        "inadequate":13.1,
+        "insufficient":16.0,
+        "adequate": 15.0
+     }
+    },
+    {"key": "login",
+     "value":
+     {
+        "inadequate":21.8,
+        "insufficient":20.7,
+        "adequate": 12.3
+     }
+    },
+    {"key": "videos",
+     "value":
+     {
+        "inadequate":0.7,
+        "insufficient":7.5,
+        "adequate": 6.8
+     }
+    },
+    {"key": "trophies",
+     "value":
+     {
+        "inadequate":2.7,
+        "insufficient":3.8,
+        "adequate": 3.5
+     }
+    },
+    {"key": "nivel",
+     "value":
+     {
+        "inadequate":2.0,
+        "insufficient":3.6,
+        "adequate": 3.1
+     }
+    }
+    
+]
