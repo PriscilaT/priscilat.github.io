@@ -1,0 +1,41 @@
+/*body{
+    font-family: 'Roboto', sans-serif;
+    color: #4c4c4c;
+		font-style: 14pt;
+}*/
+.shadow, .chart,.tooltipContainer {
+    -moz-box-shadow:     2px 4px 4px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow:  2px 4px 4px rgba(0, 0, 0, 0.13);
+    box-shadow:          2px 4px 4px rgba(0, 0, 0, 0.13);
+    /*background: #fafafa;*/
+}
+.shadow2{
+		-webkit-box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.33);
+		-moz-box-shadow: 		4px 4px 2px 0px rgba(0,0,0,0.33);
+		box-shadow: 				4px 4px 2px 0px rgba(0,0,0,0.33);
+}
+.tooltipContainer,.chart{
+	background: #fafafa;
+}
+.tooltipInfo{
+	font-size: 0.8em;
+	font-family: 'roboto-light';
+}
+.x-axis{
+    stroke: #8d8d8d;
+    stroke-width:1;
+}
+.title{
+    text-align: center;
+    font-size:1em;
+    margin: 10px auto;
+}
+.adequate{
+    fill: #27ae60;
+}
+.insufficient{
+    fill: #f39c12;
+}
+.inadequate{
+    fill: #c0392b;
+}
