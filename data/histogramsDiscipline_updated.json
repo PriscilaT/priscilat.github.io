@@ -1,0 +1,30 @@
+[
+    {
+      "key": "questions",
+      "value": 128.0
+    },
+    {
+      "key": "wrongAnswers",
+      "value":37.0
+    },
+    {
+      "key": "correctAnswers",
+      "value":91.0
+    },
+    {
+      "key": "students",
+      "value": 400
+    },
+    {
+      "key": "videos",
+      "value": 43
+    },
+    {
+      "key": "trophies",
+      "value": 2
+    },
+    {
+      "key": "studentsOnline",
+      "value": 258
+    }
+]

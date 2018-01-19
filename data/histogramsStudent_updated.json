@@ -1,0 +1,34 @@
+[
+    {
+      "key": "questions",
+      "value": 32.0
+    },
+    {
+      "key": "wrongAnswers",
+      "value":5
+    },
+    {
+      "key": "correctAnswers",
+      "value":27
+    },
+    {
+      "key": "points",
+      "value": 16.0
+    },
+    {
+      "key": "login",
+      "value": 12.3
+    },
+    {
+      "key": "videos",
+      "value": 8.0
+    },
+    {
+      "key": "trophies",
+      "value": 2
+    },
+    {
+      "key": "nivel",
+      "value": 3
+    }
+]
