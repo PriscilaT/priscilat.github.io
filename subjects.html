@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/viewStyle.css">
+    <link rel="stylesheet" href="style/viewHistograms.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+    <title>T-Partner Layout</title>
+  </head>
+  <body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div class="container-fluid" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav_top">
+        <div class="btn-group" role="group" aria-label="...">
+          <div class="btn-group" role="group" id="btns_top" >
+            <button type="button" class="btn btn-default" id="btn_top" style="left:100%;"  onclick="location.href='notifications.html'"><img src="foto/sino.png" class="icone" ></button>
+            <button type="button" class="btn btn-default" id="btn_top" style="left:100%;" onclick="location.href='message.html'"><img src="foto/mensagem.png" class="icone"></button>
+            <button type="button" class="btn btn-default dropdown-toggle" id="btn_top" style="left:100%;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="foto/perfil.png" class="icone" >
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" style="left:100%;">
+              <li><a href="profile.html">Perfil</a></li>
+              <li><a href="settings.html">Configurações</a></li>
+              <li><a href="about.html">Sobre o T-Partner</a></li>
+              <li><a href="login.html">Sair</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav aria-label="breadcrumb" id="nav_top2">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Painel</a></li>
+          <li class="breadcrumb-item"><a href="subjects.html">Disciplinas</a></li>
+          <li class="breadcrumb-item active" aria-current="page">...</li>
+        </ol>
+      </nav>
+     
+    </div>
+    
+
+    <div class="container-fluid" id="left_side">
+
+      <img alt="Logo T-Partner" src="foto/logo0.png" id="logo1">
+      <h1 id="logo2" style="color: white; text-align:center;">T-Partner</h1>
+      
+       <div class="btn-group-vertical" id = "bnts">
+          <button type="button" class="btn btn-outline-light" id="btn_side" onclick="location.href='index.html'">Painel</button>
+          <button type="button" class="btn btn-outline-light" id="btn_side" onclick="location.href='subjects.html'">Disciplinas</button>
+          <button type="button" class="btn btn-outline-light" id="btn_side" onclick="location.href='classes.html'">Turmas</button>
+          <button type="button" class="btn btn-outline-light" id="btn_side" onclick="location.href='students.html'">Alunos</button>
+          <button type="button" class="btn btn-outline-light" id="btn_side">...</button>
+          <button type="button" class="btn btn-outline-light" id="btn_side">...</button>
+          <button type="button" class="btn btn-outline-light" id="btn_side" onclick="location.href='help.html'">Ajuda</button>
+      </div>
+
+    </div>
+
+
+    <div class="container-fluid" id="content">
+    
+      <div class="card border-primary mb-3 fluid" id="card_info">
+        <div class="card-header" id="card_style"><h5 style="color: black">Informações Básicas</h5></div>
+          <div class="card-body text-primary" id="card_info">
+          
+          </div>
+      </div>
+      
+      <div class="card border-primary mb-3 fluid" id="card_classes">
+        <div class="card-header" id="card_style"><h5 style="color: black">Turmas</h5></div>
+          <div class="card-body text-primary" id="card_classes">
+          </br>
+          </br>
+            <a href="classes.html">Classes</a></br>
+          </div>
+      </div>
+
+      <div id="middle">
+        <!-- Nav tabs -->
+        <div class="tabs-wrapper"> 
+            <ul class="nav classic-tabs" role="tablist">
+                <li class="nav-item" >
+                    <a class="nav-link waves-light active"  data-toggle="tab" href="#panel61" role="tab"><i class="fa fa-user fa-2x" aria-hidden="true"></i><br><h5 style="color: black">Desempenho</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" data-toggle="tab" href="#panel62" role="tab"><i class="fa fa-heart fa-2x" aria-hidden="true"></i><br><h5 style="color: black">Interação</h5></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab panels -->
+        <div class="tab-content card">
+
+            <!--Panel 1-->
+            <div class="tab-pane fade in show active" id="panel61" role="tabpanel">
+                <div id="histogramContainer"></div>
+            </div>
+            <!--/.Panel 1-->
+
+            <!--Panel 2-->
+            <div class="tab-pane fade" id="panel62" role="tabpanel">
+                <div id="histogramContainer"></div>
+            </div>
+            <!--/.Panel 2-->
+
+          </div>
+      </div>
+
+      <div id="schedule">
+        <h1 style="font-family: Calibri">Agenda</h1>
+        <div class="container" >
+          <div class="row row-striped" >
+            <div class="col-2 text-right">
+              <h1 class="display-4"><span class="badge badge-secondary">23</span></h1>
+              <h2>OUT</h2>
+            </div>
+            <div class="col-10">
+              <h3 class="text-uppercase"><strong>Segunda Prova</strong></h3>
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Segunda-feira</li>
+                <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 00:30- 14:00</li>
+                <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i>Localização</li>
+              </ul>
+              <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="row row-striped">
+            <div class="col-2 text-right">
+              <h1 class="display-4"><span class="badge badge-secondary">27</span></h1>
+              <h2>OUT</h2>
+            </div>
+            <div class="col-10">
+              <h3 class="text-uppercase"><strong>Entrega da atividade</strong></h3>
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>Sexta-feira</li>
+                <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 14:30 - 16:00</li>
+                <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i>Localização</li>
+              </ul>
+              <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="container-fluid" id="footer">
+      
+    </div>
+
+    <script type="text/javascript" src="./lib/View.js"></script>
+    <!-- Caminho para a biblioteca -->
+
+    <script type="text/javascript">
+      var view = new View.Histograms("histogramContainer");
+      // Criar um novo objeto da classe Histograms, passando como parâmetro o ID do container
+
+      view.plotFromJson("data/HistogramsClass.json");
+      // Criar a visualização passando o caminho para o arquivo Json
+
+    </script>
+
+  </body>
+</html>
