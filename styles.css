@@ -65,6 +65,15 @@ html{
 	width: 100%;
 		
 }
+#btn_side2{
+	height: 47%;
+	width: 100%;
+		
+}
+#btn_side21{
+	z-index:9;
+	background-color: red;
+}
 
 #logo1{
 	padding-top:0%;
@@ -100,18 +109,19 @@ html{
 	width:40%;
 	position: absolute;
 	
+	
 }
 #card_info{
 	height:37%;
 	width:54%;
 	left:45%;
 	position: absolute;
+	
 
 	
 }
 #card_style{
-	background-color: lightgray;
-
+	background-color: white;
 
 }
 #middle{
@@ -119,9 +129,18 @@ html{
 	width:96%;
 	left:2%;
 	top: 40%;
-	background-color: lightgray;
+	background-color: white;
 	position: absolute;
+	background-color: lightgray;
 
+}
+
+#nav-interacao{
+	background-color: white; 
+}
+
+#nav-desempenho{
+	background-color: white; 
 }
 
 #schedule{

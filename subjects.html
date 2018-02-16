@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style/viewHistograms.css">
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 
-    <title>T-Partner Layout</title>
+    <title>T-Partner - Disciplinas</title>
   </head>
   <body>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -47,8 +47,7 @@
       <nav aria-label="breadcrumb" id="nav_top2">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Painel</a></li>
-          <li class="breadcrumb-item"><a href="subjects.html">Disciplinas</a></li>
-          <li class="breadcrumb-item active" aria-current="page">...</li>
+          <li class="breadcrumb-item active" aria-current="page">Disciplinas</li>
         </ol>
       </nav>
      
@@ -62,7 +61,16 @@
       
        <div class="btn-group-vertical" id = "bnts">
           <button type="button" class="btn btn-outline-light" id="btn_side" onclick="location.href='index.html'">Painel</button>
-          <button type="button" class="btn btn-outline-light" id="btn_side" onclick="location.href='subjects.html'">Disciplinas</button>
+          
+          <div class="btn-group dropright" id="btn_side2">
+            <button type="button" class="btn btn-outline-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disciplinas</button>
+              <div class="dropdown-menu" id="btn_side21">
+                <a class="dropdown-item" href="subjects.html">Programação 1</a>
+                <a class="dropdown-item" href="subjects.html">Introdução à Computação</a>
+                <a class="dropdown-item" href="subjects.html">Lógica de programação</a>
+              </div>
+          </div>
+
           <button type="button" class="btn btn-outline-light" id="btn_side" onclick="location.href='classes.html'">Turmas</button>
           <button type="button" class="btn btn-outline-light" id="btn_side" onclick="location.href='students.html'">Alunos</button>
           <button type="button" class="btn btn-outline-light" id="btn_side">...</button>
@@ -74,52 +82,39 @@
 
 
     <div class="container-fluid" id="content">
-    
+
       <div class="card border-primary mb-3 fluid" id="card_info">
         <div class="card-header" id="card_style"><h5 style="color: black">Informações Básicas</h5></div>
-          <div class="card-body text-primary" id="card_info">
-          
+          <div class="card-body text-primary" id="card_style">
+            <h5>Turmas: 4 </h5>
+            <h5>Alunos: 120 </h5>
+            <h5>Horário: 13h30 - 15h10</h5>
           </div>
-      </div>
+        </div>
       
       <div class="card border-primary mb-3 fluid" id="card_classes">
         <div class="card-header" id="card_style"><h5 style="color: black">Turmas</h5></div>
-          <div class="card-body text-primary" id="card_classes">
-          </br>
-          </br>
+          <div class="card-body text-primary" id="card_style">
             <a href="classes.html">Classes</a></br>
           </div>
       </div>
 
       <div id="middle">
-        <!-- Nav tabs -->
-        <div class="tabs-wrapper"> 
-            <ul class="nav classic-tabs" role="tablist">
-                <li class="nav-item" >
-                    <a class="nav-link waves-light active"  data-toggle="tab" href="#panel61" role="tab"><i class="fa fa-user fa-2x" aria-hidden="true"></i><br><h5 style="color: black">Desempenho</h5></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-light" data-toggle="tab" href="#panel62" role="tab"><i class="fa fa-heart fa-2x" aria-hidden="true"></i><br><h5 style="color: black">Interação</h5></a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Tab panels -->
-        <div class="tab-content card">
-
-            <!--Panel 1-->
-            <div class="tab-pane fade in show active" id="panel61" role="tabpanel">
-                <div id="histogramContainer"></div>
+           
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-desempenho" role="tab" aria-controls="nav-home" aria-selected="true">Desempenho</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-interacao" role="tab" aria-controls="nav-profile" aria-selected="false">Interação</a>
+              
             </div>
-            <!--/.Panel 1-->
+          </nav>
 
-            <!--Panel 2-->
-            <div class="tab-pane fade" id="panel62" role="tabpanel">
-                <div id="histogramContainer"></div>
-            </div>
-            <!--/.Panel 2-->
-
-          </div>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-desempenho" role="tabpanel" aria-labelledby="nav-home-tab">...<div id="histogramContainer"></div></div>
+            <div class="tab-pane fade" id="nav-interacao" role="tabpanel" aria-labelledby="nav-profile-tab">...<div id="histogramContainer"></div></div>
+            
+          </div>       
+           
       </div>
 
       <div id="schedule">
