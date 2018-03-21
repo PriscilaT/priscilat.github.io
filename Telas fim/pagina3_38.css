@@ -1,0 +1,37 @@
+#box3
+{
+    top: 10%;
+    background-color: white;
+    position: absolute;
+    height: 120%;
+    width: 60%;
+    left: 25%;
+    font-size: 80%;
+    
+}
+
+#but2{
+    background-color: lightgrey;
+    width: 94%;
+    height: 4%;
+    position: absolute;
+    left: 3%;
+} 
+#select1
+{
+    position: absolute;
+    top:63%;
+    left:3%;
+    font-size: 160%;
+}
+#select2
+{
+    position: absolute;
+    top:63%;
+    left:50%;
+    font-size: 160%;
+}
+.t
+{
+    padding-bottom: 1%;
+}

@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tela NEES</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+        <link rel="stylesheet" href="pagina.css">
+         <link rel="stylesheet" href="pagina2.css">
+    </head>
+    <body>
+        <div id="topo">
+            <h1>T-Partner</h1>
+        </div>
+        <div class="dropdown">
+        <button style="cursor: pointer"><img src="foto/img1.png" class="icone" style="top:3%; left:95%; border: 2px"></button>
+        <div class="dropdown-content2">
+                    <a href="#">Perfil</a>
+                    <a href="#">Configurações</a>
+                    <a href="#">Sobre o T-Partner</a>
+                    <a href="#">Sair</a>
+                    
+                </div>
+         </div>
+            
+        <button style="cursor: pointer"><img src="foto/mensagem.png" class="icone" style="top: 3%; left:87%"></button>
+        <button style="cursor: pointer"><img src="foto/sino.png" class="icone" style="top: 3%; left:91%"></button>
+        <div id="icones"> 
+            <img src ="foto/home.png" class="icone" style="top:17%">
+            <img src="foto/calendario.png" class="icone" style="top:23%">
+            <img src="foto/tela.png" class="icone" style="top:29%;">
+        </div>
+        <div id="lateral">
+           <a href="#"><h2>Home</h2></a>
+           <a href="#"><h2 id="lateral2" >Assistente</h2></a>
+            <div class="dropdown">
+            <button id="buttondrop"><h2 id="lateral2">Cursos</h2>
+                
+            </button>
+                <div class="dropdown-content">
+                    <a href="#">Matemática Básica 2</a>
+                    <a href="#">Matemática Intermediaária 2</a>
+                    <a href="#">Português Intermediário 1</a>
+                    <a href="#">+ Cadastrar novo Curso</a>
+                </div>
+            </div>
+        </div>
+        <div id="box2">
+            <h1 class="h1-personal">Investigue o Cenário Pedagógico</h1>
+            <img src="foto/porcentagem.png" id="img2">
+           
+            <div id="texto" style="padding-left: 5%">
+                <h3>Recomende tarefas para os diferentes grupos de estudantes</h3>
+               
+            </div>
+            <div id="new">
+             <!-- Trigger/Open The Modal -->
+                <button id="myBtn">+ Nova tarefa</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 style="text-align: center">RECOMENDAR NOVA TAREFA</h3>
+                    <p>Insira o Título da tarefa</p>
+                    <input value="Assistir todos os vídeos">
+                    <p>Selecione uma atividade</p>
+                    <select>
+                        <option>Assistir todos os vídeos</option>  
+                    </select>
+                    <p>Assunto</p>
+                    <select>
+                        <option>Alunos com aprendizado individual inadequado</option>  
+                    </select>
+                    <p>Prazo</p>
+                    <select>
+                        <option>1 dia</option>  
+                        <option>3 dias</option>  
+                        <option>7 dias</option>
+                        <option>15 dias</option>
+                        <option>30 dias</option>
+                        <option>45 dias</option>
+                    </select>
+                    <p>Grupos Alvos</p>
+                    <select>
+                        <option>Inadequado</option>  
+                        <option>Insuficiente</option>  
+                        <option>Adequado</option>
+                    </select>
+                    <button class="" style="height: 30px;background-color: cornflowerblue">Salvar</button>
+                    <button class="" style="height: 30px;background-color: aliceblue;top:120%">Cancelar</button>
+                  </div>
+
+                </div>
+                <h2 style="right: 5%;position: absolute;top: 3%">Exibir todos</h2>
+            </div>
+            <img src="foto/opcoes.png" id = "opcoes">
+            
+            
+        </div>
+        <a href="3-37.html"><button class="button" style="left: 25%;top:110%;position: absolute">CERTO,<br/>Ir para a próxima etapa</button></a>
+        <button class="button" style="left: 43%;top:110%;position: absolute;background-color: white; color: black">MUDEI DE IDÉIA,<br/>Desfazer ações e retornar</button>
+        
+    
+
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+        </body>
+</html>

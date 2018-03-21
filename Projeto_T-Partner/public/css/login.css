@@ -1,0 +1,82 @@
+*{margin: 0; padding: 0;}
+#fundo
+{
+    width: 100%;
+    height: 100%;
+}
+#imagem
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+   filter: brightness(50%);
+
+}
+#icon
+{
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    height: 15%;
+    left: 44%;
+    top: 11%;
+}
+#box
+{
+   position: absolute;
+    left: 30%;
+    width: 40%;
+    background-color: white;
+    top: 40%;
+    height: 50%;
+}
+
+#entrar
+{
+    position: absolute;
+    color: white;
+    z-index: 1;
+}
+
+#tpart
+{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 400%;
+    top:25%;
+    left: 40%;
+}
+input
+{
+   
+    font-size: 150%;
+    text-align: center;
+}
+#enter
+{
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+button {
+    background-color:royalblue;
+    border: none;
+    color: white;
+    width: 50%;
+    text-align: center;
+    height: 15%;
+    
+    padding-left: 2%;
+    text-decoration: none;
+    
+    font-size: 200%;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left:24%;
+}

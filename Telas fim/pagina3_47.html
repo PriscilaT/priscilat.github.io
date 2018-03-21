@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tela NEES</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+        <link rel="stylesheet" href="pagina.css">
+         <link rel="stylesheet" href="pagina2.css">
+    </head>
+    <body>
+        <div id="topo">
+            <h1>T-Partner</h1>
+        </div>
+        <div class="dropdown">
+        <button style="cursor: pointer"><img src="foto/img1.png" class="icone" style="top:3%; left:95%; border: 2px"></button>
+        <div class="dropdown-content2">
+                    <a href="#">Perfil</a>
+                    <a href="#">Configurações</a>
+                    <a href="#">Sobre o T-Partner</a>
+                    <a href="#">Sair</a>
+                    
+                </div>
+         </div>
+            
+        <button style="cursor: pointer"><img src="foto/mensagem.png" class="icone" style="top: 3%; left:87%"></button>
+        <button style="cursor: pointer"><img src="foto/sino.png" class="icone" style="top: 3%; left:91%"></button>
+        <div id="icones"> 
+            <img src ="foto/home.png" class="icone" style="top:17%">
+            <img src="foto/calendario.png" class="icone" style="top:23%">
+            <img src="foto/tela.png" class="icone" style="top:29%;">
+        </div>
+        <div id="lateral">
+           <a href="#"><h2>Home</h2></a>
+           <a href="#"><h2 id="lateral2" >Assistente</h2></a>
+            <div class="dropdown">
+            <button id="buttondrop"><h2 id="lateral2">Cursos</h2>
+                
+            </button>
+                <div class="dropdown-content">
+                    <a href="#">Matemática Básica 2</a>
+                    <a href="#">Matemática Intermediaária 2</a>
+                    <a href="#">Português Intermediário 1</a>
+                    <a href="#">+ Cadastrar novo Curso</a>
+                </div>
+            </div>
+        </div>
+        <div id="box2">
+            <h1 class="h1-personal">Definir critérios de avaliação</h1>
+            <img src="foto/tarefas.png" id="img2">
+            <h2>Defina que parâmetros devem ser bem sucedidos para que a Decisão Pedagógica (representada na imagem acima) seja considerada bem sucedida</h2>
+            <h2 style="padding-top: 2%">Aprendizado inadequado</h2>
+            <h3>Critério</h3>
+            <select>
+                <option>Estudantes devem sair do nível de aprendizado inadequado</option>
+            </select>
+            <h3>Quantidade de estudantes</h3>
+            <select>
+                <option>30%</option>
+            </select>
+            <h2 style="padding-top: 2%">Aprendizado insuficiente</h2>
+            <h3>Critério</h3>
+            <select>
+                <option>Melhorarem a interação com o sistema</option>
+            </select>
+            <h3>Quantidade de estudantes</h3>
+            <select>
+                <option>30%</option>
+            </select>
+            <h2 style="padding-top: 2%">Aprendizado adequado</h2>
+            <h3>Critério</h3>
+            <select>
+                <option>Estudantes devem seguir a recomendação</option>
+            </select>
+            <h3>Quantidade de estudantes</h3>
+            <select>
+                <option>30%</option>
+            </select>
+            
+
+        </div>
+        <a href="fim.html"><button class="button" style="left: 25%;top:110%;position: absolute">CERTO,<br/>Ir para a próxima etapa</button></a>
+        <button class="button" style="left: 43%;top:110%;position: absolute;background-color: white; color: black">MUDEI DE IDÉIA,<br/>Desfazer ações e retornar</button>
+        
+    
+
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+        </body>
+</html>
